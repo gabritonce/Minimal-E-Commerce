@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#search-container {
+    margin: 1em 0;
+}
+
+#search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #232323;
+    padding: 1em 0.3em;
+    color: #232323
+}
+
+#search-container input::placeholder {
+    color: #232323;
+}
+
+#search-container input:focus {
+    border-bottom-color: #232323;
+}
+
+#search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color: #232323;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+}
+
+.button-value {
+    border: 2px solid #232323;
+    padding: 1em 2.2em;
+    border-radius: 3em;
+    background-color: transparent;
+    color: #232323;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #232323;
+    color: #ffffff;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+    justify-content: center;
+
+}
+
+.card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: solid #232323;
+
+}
+
+.image-container {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+}
+
+.container {
+    padding-top: 1em;
+    color: #110f29;
+}
+
+.container h5 {
+    font-weight: 500;
+}
+
+.hide {
+    display: none;
+}
+
+
+.button-hero {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: black solid;
+    padding: 10px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.button-hero:hover {
+    background-color: #232323;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+.lead-2 {
+    margin-bottom: 30px;
+}
+
+
+/* Pagina prodotti*/
+
+.container-products {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-sizing: content-box;
+}
+
+.nav-link {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    transform: translateY(-3px);
+}
+
+.nav-link:hover {
+    color: #232323;
+}
+
+.display-2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.link {
+    text-align: end;
+    margin-right: 30px;
+}
+
+.link a {
+    margin-left: 20px;
+    color: #232323;
+    text-decoration: none;
+}
+
+.link:link {
+    color: #232323;
+}
+
+@media screen and (max-width: 720px) {
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 10em;
+    }
+
+    .card {
+        max-width: 10em;
+        margin-top: 1em;
+    }
+
+    #products {
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+    }
+}
